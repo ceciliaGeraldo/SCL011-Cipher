@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+    <div class="scroll">
+        <div id="pageWelcome" class="scroll container">
+          <h1 id="welcomeTitle" class="title">&hearts; #EnSecreto &hearts;</h1>
+          <label class="subtitle">Cifra tus mensajes y envíalo con tu propio lenguaje secreto, escoge tu nivel de cifrado luego de comenzar.</label>
+          <img class="initImage" src="img/homeIcon2.jpg" alt="Imagen Mensaje Candado">         
+          <button id="btnComenzar">Comenzar</button>
+        </div>
+        <div id="chooseCipherUncipher" class="container hiddenContent">
+            <button id="btnChooseCipher" type="button">Cifrar</button>
+            <button id="btnChooseUncipher" type="button">Descifrar</button>
+        </div>
+        <div id="cipherMayor" class="container hiddenContent">
+          <div id="cipher">
+            <h1 class="title">Cifra tu mensaje</h1>
+          </div>
+        <div id="offsetRequest" class="container">
+          <label>Ingresa nivel</label>
+          <input id="offset" placeholder="1-100" type="text"/>
+          <a>
+            <img class="questionImage" src="img/questionIcon1.png" alt="Simbolo pregunta">
+          </a>
+        </div>     
+        <div id="textAreaCipher" class="container">
+            <textarea id="textToCipher" placeholder="tu mensaje a cifrar aquí"></textarea>
+            <button id="btnCipher" type="button">Cifrar</button>
+        </div>
+               
+        </div>  
+        <div class="container hiddenContent" id="uncipher">
+            <h1 class="title">Descifra tu mensaje</h1>
+            <div id="offsetRequest">
+                <label>Ingresa nivel</label>
+                <input id="offset2" placeholder="1-100" type="text"/>
+                <a>
+                  <img class="questionImage" src="img/questionIcon1.png" alt="Simbolo pregunta">
+                </a>
+              </div>   
+            <div class="container" >
+              <textarea class="" id="cipherToText" placeholder="tu mensaje a descifrar aquí"></textarea>
+            </div>            
+            <button id="btnDecode">Descifrar</button>
+        </div>
+        <div class="container hiddenContent" id="showingMessageC">
+            <textarea id="finalMessageC"></textarea>
+            <button id="btnClean" type="button">Limpiar</button>
+        </div>
+        <div id="" class=" footer">
+          <a>
+            <img id="btnHome" class="buttonFooter" src="img/homeIcon1.png" alt="icono Home">
+          </a>
+          <a>
+            <img id="btnOptions" class="buttonFooter" src="img/options.png" alt="icono Opciones">
+          </a>
+      </div>
     </div>
+
+   
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
