@@ -7,6 +7,7 @@
     document.getElementById("btnChooseUncipher").addEventListener("click", goToUnipher);
     document.getElementById("btnOptions").addEventListener("click", goToOptions);
     document.getElementById("btnHome").addEventListener("click", goToHome);
+    document.getElementById("question").addEventListener("click", questionTip);
     
    
     function showContent(element){
@@ -16,6 +17,10 @@
     function hideContent(element){
 
         document.getElementById(element).style.display = 'none';
+    }
+    function questionTip(){
+
+        showContent("tips");
     }
     function cleanContent(){
         document.getElementById("offset").value="";
