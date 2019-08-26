@@ -30,6 +30,7 @@
         document.getElementById("finalMessageC").value = "";
 
         hideContent("showingMessageC")
+        hideContent("tips");
     }
     function goToOptions(){
         cleanContent();
@@ -37,6 +38,7 @@
         hideContent("cipherMayor");
         hideContent("uncipher");
         showContent("chooseCipherUncipher");
+        hideContent("tips");
     }
 
     function goToHome(){
@@ -47,24 +49,28 @@
         hideContent("chooseCipherUncipher");
         showContent("pageWelcome");
         showContent("footer");
+        hideContent("tips");
     }
     function startApp(){
         
         hideContent("pageWelcome");
         showContent("chooseCipherUncipher");
         showContent("footer");
+        hideContent("tips");
     }
     function goToCipher(){
 
         hideContent("chooseCipherUncipher");
         showContent("cipherMayor");
         showContent("footer");
+        hideContent("tips");
     }
     function goToUnipher(){
 
         hideContent("chooseCipherUncipher");
         showContent("uncipher");
         showContent("footer");
+        hideContent("tips");
     }
 
     function messageToCode(){    
