@@ -31,3 +31,6 @@ Extras:
 - Los colores han sido escogidos en base al público objetivo.
 - Sujeto a cambios y adaptaciones según solicite el cliente.
 
+## Primer Wireframe
+https://balsamiq.cloud/sj4lvsi/pqc6064/r2278
+
