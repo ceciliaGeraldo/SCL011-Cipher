@@ -88,7 +88,7 @@
         let text = document.getElementById("cipherToText").value.toUpperCase();
         let offset = parseInt(document.getElementById("offset2").value);
         let decodeText = cipher.decode(text,offset);        
-        document.getElementById("finalMessageC").innerHTML = decodeText;        
+        document.getElementById("finalMessageC").value = decodeText;        
 
     }
 

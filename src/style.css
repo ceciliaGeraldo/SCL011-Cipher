@@ -1,122 +1,73 @@
 
+html{
+  font-family: Roboto;
+}
+body{
 
-input{
-
-    padding-top:2%;
-    padding-bottom:2%;
-    width:40%;
-    margin-bottom: 7px;
-    font-size: 300%;
-    display: flex;
-    justify-content: end;
+  font-size: 18px;
 }
 
+#foto{
+
+    max-width: 380px;
+    margin-top: 0px;
+    margin-left: 3em;
+    position: relative;
+
+}
+
+label{
+
+  width: 70%;
+}
+p{
+  width: 70%;
+  margin: 5px;
+  padding: 0px;
+  text-align: justify;
+}
+
+
+
 button{
-    color:#ffffff;
-    background-color:#E1176C;
-    padding-top:5%;
-    padding-bottom:5%;
-    margin-bottom: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
-    width:50% ;
-    border:medium;
-    border-radius:50px;
-    margin-top:10%;
-    text-transform:uppercase;
-    box-shadow:0px 3px 4px rgba(0, 0, 0, 0.2);
-    font-size: 150%;
-    text-align: center;
-    
-  }
-
-  label{
-
-    width: 70%;
-    display: flex;
-    justify-content: center;
-  }
-
- 
-
-
-  .container{
-
-    width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-family:Roboto;
-      color:#333333;
-      background-color:#ffffff;
-      text-align: center;
-  }
-  .container textarea{
-    display: flex;
-    justify-content: center;
-    resize: none;
-    width: 75%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-size: 200%;
-    font-family: Roboto;
-  }
-
-  textarea::placeholder{
-
-    font-size: 30px;
-    font-family: Roboto;
-    text-align: center;
-    font-style: italic;
-  }
-  
-  .initImage{
-
-   width: 40%;
-  display: flex;
+  color:#ffffff;
+  background-color:#E1176C;
+  border:medium;
+  border-radius:50px;
+  text-transform:uppercase;
+  box-shadow:0px 3px 4px rgba(0, 0, 0, 0.2);
+  width: 50%;;
   justify-content: center;
-  flex-direction: column;
-  }
-
-  .questionImage{
-
-    width: 7%;
-  }
-
-  .hiddenContent{
-      display: none;
-  }
-
-  .title{
-
-    font-size: 60px;
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: #E1176C;
     
-  }
-  .subtitle{
-    display: flex;
-    flex-direction: row;
-    font-size: 150%;
+  
+}
 
-    
-  }
-  .footer{
+.questionPic{
 
-    display: flex;
-    flex-direction: row;
-    text-align: center;    
-    bottom: 5px;
-    margin-top: 10%; 
-  }
+  max-width: 30px;
+}
 
-  .buttonFooter{
+.footer{
+  position: fixed;
+}
 
-    width: 20%;
+  @media(max-width:600px){
+    #root{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .logo{
+
+        margin-left: calc(100%-180px);
+    }
+    body{
+      font-family: Roboto;
+      font-size: 18px;
+      line-height: 23px;
+    }
+   
+
   }
 
 

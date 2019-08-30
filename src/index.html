@@ -9,59 +9,59 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="scroll">
-        <div id="pageWelcome" class="scroll container">
-          <h1 id="welcomeTitle" class="title">&hearts; #EnSecreto &hearts;</h1>
-          <label class="subtitle">Cifra tus mensajes y envíalo con tu propio lenguaje secreto, escoge tu nivel de cifrado luego de comenzar.</label>
-          <img class="initImage" src="img/homeIcon2.jpg" alt="Imagen Mensaje Candado">         
+    <div id="root">
+
+        <div id="pageWelcome">
+          <h1 id="welcomeTitle">&hearts; #EnSecreto &hearts;</h1>
+          <p>Cifra tus mensajes y envíalo con tu propio lenguaje secreto, escoge tu nivel de cifrado luego de comenzar.</p>
+          <img id="foto" src="img/homeIcon2.jpg" alt="Imagen Mensaje Candado">         
           <button id="btnComenzar">Comenzar</button>
         </div>
-        <div id="chooseCipherUncipher" class="container hiddenContent">
+
+        <div id="chooseCipherUncipher" >
             <button id="btnChooseCipher" type="button">Cifrar</button>
             <button id="btnChooseUncipher" type="button">Descifrar</button>
         </div>
-        <div id="cipherMayor" class="container hiddenContent">
-          <div id="cipher">
-            <h1 class="title">Cifra tu mensaje</h1>
-          </div>
-        <div id="offsetRequest" class="container">
-          <label>Ingresa nivel</label>
-          <input id="offset" placeholder="1-100" type="text"/>
-          <a>
-            <img class="questionImage" id="question" src="img/questionIcon1.png" alt="Simbolo pregunta">
-          </a>
-          <p id="tips" class="hiddenContent">Escoge un número del 1-100 que corresponderá el nivel de cifrado. Debes recordar y conservar este número, ya que el número debe ser el mismo tanto para cifrar como para descifrar</p>
-        </div>     
-        <div id="textAreaCipher" class="container">
+
+        <div id="cipherMayor" >          
+            <h1>Cifra tu mensaje</h1>          
+            <div id="offsetRequest" >
+              <label>Ingresa nivel</label>
+              <input id="offset" placeholder="1-100" type="text"/>
+              <a>
+                <img class="questionPic" id="question" src="img/questionIcon1.png" alt="Simbolo pregunta">
+              </a>
+              <p id="tips">Escoge un número del 1-100 que corresponderá el nivel de cifrado. Debes recordar y conservar este número, ya que el número debe ser el mismo tanto para cifrar como para descifrar</p>
+            </div>
+
             <textarea id="textToCipher" placeholder="tu mensaje a cifrar aquí"></textarea>
             <button id="btnCipher" type="button">Cifrar</button>
-        </div>
                
-        </div>  
-        <div class="container hiddenContent" id="uncipher">
-            <h1 class="title">Descifra tu mensaje</h1>
+          </div>  
+        <div id="uncipher">
+            <h1 >Descifra tu mensaje</h1>
             <div id="offsetRequest">
                 <label>Ingresa nivel</label>
                 <input id="offset2" placeholder="1-100" type="text"/>
                 <a>
-                  <img class="questionImage" src="img/questionIcon1.png" alt="Simbolo pregunta">
+                  <img class="questionPic" src="img/questionIcon1.png" alt="Simbolo pregunta">
                 </a>
               </div>   
-            <div class="container" >
-              <textarea class="" id="cipherToText" placeholder="tu mensaje a descifrar aquí"></textarea>
+            <div>
+              <textarea id="cipherToText" placeholder="tu mensaje a descifrar aquí"></textarea>
             </div>            
             <button id="btnDecode">Descifrar</button>
         </div>
-        <div class="container hiddenContent" id="showingMessageC">
+        <div id="showingMessageC">
             <textarea id="finalMessageC"></textarea>
             <button id="btnClean" type="button">Limpiar</button>
         </div>
-        <div id="" class=" footer">
+        <div id="">
           <a>
-            <img id="btnHome" class="buttonFooter" src="img/homeIcon1.png" alt="icono Home">
+            <img id="btnHome" src="img/homeIcon1.png" alt="icono Home">
           </a>
           <a>
-            <img id="btnOptions" class="buttonFooter" src="img/options.png" alt="icono Opciones">
+            <img id="btnOptions" src="img/options.png" alt="icono Opciones">
           </a>
       </div>
     </div>
